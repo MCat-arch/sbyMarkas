@@ -1,4 +1,5 @@
 import React from 'react';
+import image from "../assets/cat.jpg"
 
 
 const LinkTree = () => {
@@ -15,7 +16,7 @@ const LinkTree = () => {
     {/* Profile Section */}
     <div className="card-body text-center">
       <img
-        src="/cat.jpg"
+        src={image}
         alt="Profile"
         className="rounded-circle img-thumbnail mb-3"
         style={{ width: "150px", height: "150px", objectFit: "cover" }}
