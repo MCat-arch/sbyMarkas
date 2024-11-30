@@ -9,37 +9,43 @@ const LinkTree = () => {
   ];
 
   return (
-    <div className="linktree-container">
-      <div className="card">
-        {/* Profile Section */}
-        <div className="profile-section">
-          <img
-            src="./src/assets/cat.jpg"
-            alt="Profile"
-            className="profile-img"
-          />
-          <h1 className="profile-name">Khoerunnisa Utami</h1>
-          <p className="profile-bio">
-            Short bio about yourself or your projects. Showcase your personality here!
-          </p>
-        </div>
+    <div className="container">
+        <div className='div-center'>
+  <div className="card shadow-lg align-items-center" style={{ maxWidth: "400px", width: "100%" }}>
+    {/* Profile Section */}
+    <div className="card-body text-center">
+      <img
+        src="./src/assets/cat.jpg"
+        alt="Profile"
+        className="rounded-circle img-thumbnail mb-3"
+        style={{ width: "150px", height: "150px", objectFit: "cover" }}
+      />
+      <h1 className="card-title fs-4 fw-bold">Khoerunnisa Utami</h1>
+      <p className="card-text text-muted">
+        Hey there! Sup
+      </p>
 
-        {/* Links Section */}
-        <div className="links-section">
-          {links.map((link) => (
-            <a
-              key={link.id}
-              href={link.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="link-button"
-            >
-              {link.label}
-            </a>
-          ))}
-        </div>
+      {/* Links Section */}
+      <div className="links-section mt-4">
+        {links.map((link) => (
+          <a
+            key={link.id}
+            href={link.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn btn-dark btn-lg w-100 mb-2"
+          >
+            {link.label}
+          </a>
+        ))}
       </div>
     </div>
+  </div>
+  </div>
+</div>
+
+
+  
   );
 };
 
