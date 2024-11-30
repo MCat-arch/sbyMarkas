@@ -15,7 +15,7 @@ const LinkTree = () => {
     {/* Profile Section */}
     <div className="card-body text-center">
       <img
-        src="./src/assets/cat.jpg"
+        src="/cat.jpg"
         alt="Profile"
         className="rounded-circle img-thumbnail mb-3"
         style={{ width: "150px", height: "150px", objectFit: "cover" }}
