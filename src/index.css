@@ -1,4 +1,32 @@
 /* General container for centering */
+.body{
+  background: linear-gradient(135deg, #cfcffc, #4555a8);
+}
+
+/* Custom styling for the buttons */
+.custom-btn {
+
+  background-color: #ffffff; /* White background */
+  color: #343a40;           /* Dark text */
+  border: 2px solid #343a40; /* Dark border */
+  transform: scale(1.05);   /* Slight scaling effect */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+/* Hover effect */
+.custom-btn:hover {
+  background-color: #343a40; /* Dark grey */
+  color: #ffffff;          /* White text */
+  border: 2px solid #ffffff; /* White border */
+  transition: all 0.3s ease; /* Smooth transitions */
+}
+
+/* Button focus styling for accessibility */
+.custom-btn:focus {
+  outline: none;
+  box-shadow: 0px 0px 10px rgba(52, 58, 64, 0.8); /* Glow effect */
+}
+
 
 .container{
   padding: 0;
@@ -72,7 +100,13 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: linear-gradient(135deg, #cfcffc, #4555a8);
   padding: 20px;
   
+}
+
+.footer{
+  font-size: small;
+  font-weight: 100;
+  margin-top: 2em;
+  text-align: center;
 }
