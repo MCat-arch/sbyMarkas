@@ -4,7 +4,7 @@ import image from "../assets/cat.jpg"
 
 const LinkTree = () => {
   const links = [
-    { id: 1, label: "Bio", link: "https://helloworld-mcat-archs-projects.vercel.app/" },
+    { id: 1, label: "Bio", link: "https://helloworld-git-ver2-mcat-archs-projects.vercel.app/" },
     { id: 2, label: "GitHub", link: "https://github.com/MCat-arch" },
     { id: 3, label: "Instagram", link: "https://www.instagram.com" }
   ];
